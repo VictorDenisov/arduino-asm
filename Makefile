@@ -4,7 +4,7 @@ build:
 	avr-objcopy --output-target=ihex demo.elf demo.ihex
 
 program:
-	sudo avrdude -c arduino -p m328p -P /dev/ttyUSB0 -Uflash:w:"demo.ihex":i
+	sudo avrdude -c arduino -p m328p -P /dev/ttyACM0 -Uflash:w:"demo.ihex":i
 
 flash.o:	demo.s
 		avr-gcc \
