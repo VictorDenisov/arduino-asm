@@ -19,19 +19,19 @@ __vectors:
 		jmp	empty ; int0
 		jmp	empty ; int1
 		jmp	pcint0
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
-		jmp	empty ; int1
+		jmp	empty ; pcint1
+		jmp	empty ; pcint2
+		jmp	empty ; wdt
+		jmp	empty ; timer2_compa
+		jmp	empty ; timer2_compb
+		jmp	empty ; timer2_ovf
+		jmp	empty ; timer1_capt
+		jmp	empty ; timer1_compa
+		jmp	empty ; timer1_compb
+		jmp	empty ; timer1_ovf
+		jmp	empty ; timer0_compa
+		jmp	empty ; timer0_compb
+		jmp	empty ; timer0_ovf
 		jmp	empty ; int1
 		jmp	empty ; int1
 		jmp	empty ; int1

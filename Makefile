@@ -3,6 +3,11 @@ build:
 	avr-ld -o demo.elf demo.o
 	avr-objcopy --output-target=ihex demo.elf demo.ihex
 
+c:
+	avr-gcc -mmcu=atmega328p -O2 -o demo.o demo.c
+	avr-ld -o demo.elf demo.o
+	avr-objcopy --output-target=ihex demo.elf demo.ihex
+
 program:
 	sudo avrdude -c arduino -p m328p -P /dev/ttyACM0 -Uflash:w:"demo.ihex":i
 
